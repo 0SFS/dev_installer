@@ -1,0 +1,44 @@
+{
+  "name": "@0sfs/dev-installer",
+  "version": "0.1.0-candidate.1",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0sfs/dev_installer.git"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "bin": {
+    "0sfs-setup": "./bin/setup.mjs"
+  },
+  "exports": {
+    ".": "./src/cli.mjs",
+    "./bootstrap": "./src/bootstrap.mjs",
+    "./shared-installer-pin": "./contracts/shared-installer-pin.json"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE",
+    "docs",
+    "deps",
+    "contracts",
+    "AGENTS.md"
+  ],
+  "dependencies": {
+    "@foss-earth/dev-installer": "file:deps/foss-earth-dev-installer-0.1.0-fa8f021.tgz"
+  },
+  "devDependencies": {
+    "@foss-earth/ci": "file:deps/foss-earth-ci-1db73d1ddb342e348a2c9e8387f7bbc7ebb3225e.tgz"
+  },
+  "scripts": {
+    "check:syntax": "node --check bin/setup.mjs && node --check src/cli.mjs && node --check src/sharedTool.mjs && node --check src/bootstrap.mjs",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs",
+    "check:conformance": "node node_modules/@foss-earth/ci/bin/conformance.mjs --consumer . --trusted-release .attribution-release.json --output-root build/common-conformance",
+    "ci": "npm run check:conformance && npm run check:syntax && npm test"
+  }
+}

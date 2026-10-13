@@ -1,0 +1,26 @@
+{
+  "package": "@foss-earth/dev-installer",
+  "version": "0.1.0",
+  "revision": "fa8f021c34868f52ff27c3fd2821df3701932518",
+  "artifactSha256": "5ae8792a3d8703a2fac01455f209aafc634843ecb0d679357458cc8c1cd11f91",
+  "sizeBytes": 215891,
+  "files": {
+    "bin/earth.mjs": "924ff0fd16c93b31af34c71bf0bdb7f992272e8ab5618a0c64fc3d757e02572e",
+    "bin/workspace.mjs": "cc4aeaaf2f8c479668c03a451f585ef407943885e523da88379b22bb66e5388d",
+    "package.json": "37f48fc9b9ca4f7b0030f9a85b6c9cacd858697d10275097b21c5928b0ad26c6",
+    "schemas/bootstrap-v1.schema.json": "4470765921f53dd5085bed45a059287259e706231a43b27f8310e90dc6937664",
+    "schemas/workspace-v1.schema.json": "1b470360aae07c95c5bfc15b6dbbde4dd5e6d8e87443e46bc341f2a64f515397",
+    "src/archive.mjs": "5413263e6fe5e50938649270e06866af85d60c2778eeadd782a154a483fc1f9e",
+    "src/bootstrap.mjs": "6905a9b50316256cafba31932b109723923005bb2b09a45a1629f6fc8d9d7211",
+    "src/choices.mjs": "24a7c86a26dfaedca0bc13b2d824409d9bf73168f288e4f4fb1a7c3486fadfa3",
+    "src/cli.mjs": "3520650b54eab784ca6393c076a06c0515d65b9cab8046fc1016155af6b01722",
+    "src/manifest.mjs": "39ef0efaf125226fbd45e8188bf2482519303f075c82fd6d5e6673c2d0e7a62d",
+    "src/packages.mjs": "90d6424917f151382996b11484dc6988e5d05dadb5653e2a38388142bf956900",
+    "src/paths.mjs": "647595bed394895969b9029879e6ee56757c03375fcb6a9241682180d782e2b0",
+    "src/process.mjs": "22516c68b5613cd5770bf68c26e9d7d50fa01fcc8a6b139911b30f6993ead46f",
+    "src/workspace.mjs": "3ecfdad7aafe664b1c284473e0466499bf8eeadd055912cae8de2255585adc13"
+  },
+  "publicEntry": "./archive",
+  "publicEntryPath": "src/archive.mjs",
+  "trustedDescriptorSha256": "6b593cfed9709a8bf8597a9d9bc6687ee631d6e0fd95768d34ae460f2131ce4e"
+}
